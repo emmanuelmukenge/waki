@@ -1,0 +1,358 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAKI</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <div class="container-fluid" style="background-color: #5934f4">
+      <nav class="navbar sticky-top navbar-light bg-light;">
+          <a class="navbar-brand" href="index.html"><h1>WAKI</h1></a>
+          <div class="dropdown show">
+            <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Cours
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#pyt">Informatique</a>
+              <a class="dropdown-item" href="#pyt">Gestion des affaires</a>
+              <a class="dropdown-item" href="#pyt">Sciences physique et ingénerie</a>
+              <a class="dropdown-item" href="#pyt">sciences sociales</a>
+              <a class="dropdown-item" href="#pyt">Langues et communication</a>
+              <a class="dropdown-item" href="#grt">Arts et design</a>
+              <a class="dropdown-item" href="#grt">Musique</a>
+              <a class="dropdown-item" href="#grt">Santé</a>
+              <a class="dropdown-item" href="#grt">Développement personnel</a>
+            </div>
+          </div>
+          <form class="form-inline"> 
+            <input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Recherche</button>
+          </form>
+          <div class="dropdown show">
+            <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Nos programmes
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#jbt">Certifiés</a>
+              <a class="dropdown-item" href="#grt">Gratuits</a>
+            </div>
+          </div>
+          <a class="navbar-brand" href="#foot">A propos de</a>
+        <a href="#form-conn"><button type="button" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Connection</button></a>
+         <a href="#form-insc"> <button type="button" class="btn btn-outline-dark my-2 my-sm-0" type="submit">Inscription</button></a>
+        </nav>
+    </div>
+  </header>
+  <div id="form-conn" class="div-form">
+    <div class="div-content">
+      <a class="close-popup" href="#">&times;</a> 
+      <h2>Connexion</h2><br><br>
+      <form>
+      <div class="content-popup">
+          <label for="username">Login: &nbsp;&nbsp;  </label><input type="email" placeholder="Nom d'utilisateur ou e-mail" name="username"><br><br>
+          <label for="pass">Mot de passe: &nbsp;&nbsp;  </label><input type="password" placeholder="********" name="pass"><br><br>
+          <a href="#!">Mot de passe oublié?</a><br><br>
+          <button type="submit" class="btn btn-primary btn-block">Se Connecter</button>
+      </div></form>
+    </div>
+  </div>
+
+  <div id="form-insc" class="div-insc">
+    <div class="div1-content">
+      <a class="close-popup" href="#">&times;</a> 
+      <h2>Inscription</h2><br><br>
+      <form>
+      <div class="content1-popup">
+          <label for="username">Nom: &nbsp;&nbsp;  </label><input type="email" placeholder="..." name="username"><br><br>
+          <label for="pass">Date de naissance: &nbsp;&nbsp;  </label><input type="date" name="date"><br><br>
+          <label for="pass">Niveau scolaire: &nbsp;&nbsp;  </label><input type="password" name="pass"><br><br>
+          <label for="username">Login: &nbsp;&nbsp;  </label><input type="email" placeholder="mkg@zab.com" name="username"><br><br>
+          <label for="pass">Mot de passe: &nbsp;&nbsp;  </label><input type="password" placeholder="********" name="pass"><br><br>
+          <button type="submit" class="btn btn-primary btn-block">S'inscrire'</button>
+      </div></form>
+    </div>
+  </div>
+
+  <div id="contenu">
+    <div id="carouselExampleIndicators" class="carousel slide photo_body" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    </ol>	
+  <div class="carousel-inner" role="listbox">
+  <div class="carousel-item active">
+  <img class="d-block w-100" src="sl.png" alt="First slide">
+  </div>
+  <div class="carousel-item">
+  <img class="d-block w-100" src="waki.png" alt="First slide">
+  </div>
+  
+  <div class="carousel-item">
+  <img class="d-block w-100" src="waki2.png" alt="Second slide">
+  </div>
+  <div class="carousel-item">
+  <img class="d-block w-100" src="https://1.bp.blogspot.com/-GWl5F8P4t-8/XB4_VV4VE5I/AAAAAAAAAKE/SmHRzas-LpMpDBoLn6otR9AznVsr6L7OgCEwYBhgL/s1600/t1larg.africa.cnn.jpg')" alt="Third slide">
+  </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only"></span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only"></span>
+  </a>
+  </div>
+
+  <div id="pyt"></div>
+  <div class="row" style="margin-top: 30px; margin-block-end: 50px; margin-left: 50px; margin-right: 50px;">
+    <div class="container" style="margin-top: 15px; margin-block-end: 15px; color: #5934f4; background-color: #ffbd59;"><h2><font-size><strong> COMMENCEZ UNE NOUVELLE CARRIERE N'A JAMAIS ETE AUSSI SIMPLE</strong></font-size></h2></div>
+    <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+            <img src="mng.png" alt="Molato kin" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Management</h5>
+                <p class="card-text">
+                    Oza na combien na salela yo site? solola déjà heure yango yo avant ba services na nga ekoma talo
+                </p>
+                <a href="#" class="btn btn-primary">Voir</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card">
+          <img src="mrk.png" alt="Molato kin" class="card-img-top">
+          <div class="card-body">
+              <h5 class="card-title">Marketing</h5>
+              <p class="card-text">
+                  Oza na combien na salela yo site? solola déjà heure yango yo avant ba services na nga ekoma talo
+              </p>
+              <a href="#" class="btn btn-primary">Voir</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4">
+    <div class="card">
+        <img src="medecine.png" alt="Molato kin" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Médecine</h5>
+            <p class="card-text">
+                Oza na combien na salela yo site? solola déjà heure yango yo avant ba services na nga ekoma talo
+            </p>
+            <a href="#" class="btn btn-primary">Voir</a>
+        </div>
+    </div>
+</div>
+  </div>
+
+  <div class="jumbotron">
+    <div class="txt">
+    <h1 class="display-4"><strong>APPRENEZ SANS LIMITE!</strong></h1>
+    <p class="lead"><font-size><strong>Réorientez ou faites progresser votre carrière grâce à plus de 5 400 cours, Certificats Professionnels.</strong></font-size></p>
+
+    <p></p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#form-insc" role="button">INSCRIVEZ-VOUS ICI</a>
+    </p>
+  </div>
+  </div>
+
+
+  <div class="row" style="margin-top: 50px; margin-block-end: 50px; margin-left: 15px; margin-right: 15px;">
+    <div class="container" style="text-align: center; margin-block-end: 10px;"><h2><p>OUVREZ VOUS DES NOUVELLES PORTES GRACE A UN APPRENTISSAGE DE NIVEAU SUPPERIEURE </p></h2></div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="ia.png" alt="Card img cap">
+    <div class="card-body">
+      <h5 class="card-title">Inteligence Artificielle</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin-left: 10px;">
+    <img class="card-img-top" src="web.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Programmation</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin-left: 10px;">
+    <img class="card-img-top" src="bus.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">business Analitique</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin-left: 10px;">
+    <img class="card-img-top" src="arch.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Architecture</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  </div>
+
+<div id="jbt">
+  <div class="card mb-3">
+  <img src="https://4.bp.blogspot.com/-InDD3Hm_bhU/XB4_TK3TT7I/AAAAAAAAAJ4/r5tUeCOqq1MTchFh7D7pWdf582A4qYIIwCEwYBhgL/s1600/Businesswoman-working-at-a-computer-1280x720.jpg')" class="card-img-top" alt="Wild Landscape"/>
+  <div class="card-body">
+    <h5 class="card-title"><a href="#" class="btn btn-primary">Cours Certifiés</a></h5>
+    <p class="card-text">
+    <p> Commencez une nouvelle orientation professionnel</p>
+  Plus de 4 000 cours portant sur des sujets tels que la business analytics, la conception graphique, Python et bien d'autres.
+    </p>
+    <p class="card-text">
+      <small class="text-muted">Derniére mise à jour il y'a 3 min</small>
+    </p>
+  </div>
+</div>
+</div>
+
+   
+
+  
+   <div id="grt">
+   <div class="row" style="margin-top: 50px; margin-block-end: 50px; margin-left: 15px; margin-right: 15px;">
+    <div class="container" style="text-align: center; margin-block-end: 10px;"><h2><P> COURS QUE VOUS POUVEZ TERMINER EN UN JOUR </p></h2></div>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="rs.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Marketing des réseaux sociaux</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin-left: 10px;">
+    <img class="card-img-top" src="python.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Python</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin-left: 10px;">
+    <img class="card-img-top" src="secours.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Secourisme</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem; margin-left: 10px;">
+    <img class="card-img-top" src="theatre.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Monde du théatre</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Voir</a>
+    </div>
+  </div>
+  </div>
+</div>
+
+</body>
+<div id="foot"></div>
+<footer class="text-center text-lg-start text-muted" style="background-color: #5434f4;">
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <div class="me-5 d-none d-lg-block" style="color: #ffbd59;">
+      <span>NOS RESEAUX SOCIAUX:</span>
+    </div>
+    <div class="rs" style="color: #ffbd59;">
+      <a href="#" class="me-4 link-secondary">
+        <i class="facebook-f" style="color: #ffbd59;">facebook</i>
+      </a>
+      <a href="#" class="me-4 link-secondary">
+        <i class="twitter" style="color: #ffbd59;">twitter</i>
+      </a>
+      <a href="#" class="me-4 link-secondary">
+        <i class="google" style="color: #ffbd59;"> google</i>
+      </a>
+      <a href="#" class="me-4 link-secondary">
+        <i class="instagram" style="color: #ffbd59;">instagram</i>
+      </a>
+    </div>
+  </section>
+  <section class="foottxt" style="color: #ffbd59;">
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>WAKI
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vu</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">parametres</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Aide</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> Kinshasa, Bandalungwa, R.D.Congo</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            waki@tigesso.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 243 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 243 234 567 89</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-center p-4" style="color: #ffbd59;">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="#">SMKGD.com</a>
+  </div>
+</footer>
+
+</html>
